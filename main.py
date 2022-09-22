@@ -19,7 +19,7 @@ def run_cmd(in_file_path, out_file_path, command_file_path):
 
 
 if __name__ == "__main__":
-    command_file_path = "./input/cmd6.txt"
+    command_file_path = "./input/cmd1.txt"
     in_file_path = "./input"
     out_file_path = "./output"
     run_cmd(in_file_path, out_file_path, command_file_path)

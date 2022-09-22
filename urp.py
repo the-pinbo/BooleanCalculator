@@ -91,26 +91,26 @@ def cubes_and(left, right):
     return complement(cubes_or(complement(left), complement(right)))
 
 
-def cubes_exor(left, right):
+def cubes_xor(left, right):
     return cubes_or(cubes_and(left, complement(right)), cubes_and(complement(left), right))
 
 
 def boolDiff(cubes, x):
-    pCubes = complement(positiveCofactor(cubes, x))
-    nCubes = complement(negativeCofactor(cubes, x))
-    return cubes_exor(pCubes, nCubes)
+    pCf = positiveCofactor(cubes, x)
+    nCf = negativeCofactor(cubes, x)
+    return cubes_xor(pCf, nCf)
 
 
 def consensus(cubes, x):
-    pCubes = complement(positiveCofactor(cubes, x))
-    nCubes = complement(negativeCofactor(cubes, x))
-    return cubes_and(pCubes, nCubes)
+    pCf = positiveCofactor(cubes, x)
+    nCf = negativeCofactor(cubes, x)
+    return cubes_and(pCf, nCf)
 
 
-def consensus(cubes, x):
-    pCubes = complement(positiveCofactor(cubes, x))
-    nCubes = complement(negativeCofactor(cubes, x))
-    return cubes_and(pCubes, nCubes)
+def smoothing(cubes, x):
+    pCf = positiveCofactor(cubes, x)
+    nCf = negativeCofactor(cubes, x)
+    return cubes_or(pCf, nCf)
 
 
 def complement(cubes):

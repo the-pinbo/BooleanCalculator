@@ -14,6 +14,10 @@ class BCE(object):
             "+": self.do_or,
             "&": self.do_and,
             "p": self.write_pcn,
+            "xor": self.do_xor,
+            "dx": self.do_dx,
+            "cx": self.do_cx,
+            "sx": self.do_sx,
             "q": self.quit
         }
         self.done = False
@@ -44,6 +48,19 @@ class BCE(object):
     def do_and(self, resultNum, leftNum, rightNum):
         self.eqs[resultNum] = urp.cubes_and(
             self.eqs[leftNum], self.eqs[rightNum])
+
+    def do_xor(self, resultNum, leftNum, rightNum):
+        self.eqs[resultNum] = urp.cubes_xor(
+            self.eqs[leftNum], self.eqs[rightNum])
+
+    def do_dx(self, resultNum, inNum, x):
+        self.eqs[resultNum] = urp.boolDiff(self.eqs[inNum], int(x))
+
+    def do_cx(self, resultNum, inNum, x):
+        self.eqs[resultNum] = urp.consensus(self.eqs[inNum], int(x))
+
+    def do_sx(self, resultNum, inNum, x):
+        self.eqs[resultNum] = urp.smoothing(self.eqs[inNum], int(x))
 
     def quit(self):
         self.done = True
