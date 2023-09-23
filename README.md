@@ -91,11 +91,16 @@ Suppose we have a function $F_1 = X_1.X_2 + X_2.X_3 + X_3.X_1$
 ```
 
 - $F_0 =$ $\frac{\partial F_1}{\partial x}$ $\Rightarrow X_2 \oplus X_3$
-  <img src="readme_img/dx.png" alt="output screen shot">
+
+<img src="readme_img/dx.png" alt="output screen shot">
+
 - $F_0 = C_X(F_1)$ $\Rightarrow X_2 . X_3$
-  <img src="readme_img/cx.png" alt="output screen shot">
+  
+<img src="readme_img/cx.png" alt="output screen shot">
+
 - $F_0 = S_X(F_1)$ $\Rightarrow X_2 + X_3$
-  <img src="readme_img/sx.png" alt="output screen shot">
+  
+<img src="readme_img/sx.png" alt="output screen shot">
 
 ## Setup
 
