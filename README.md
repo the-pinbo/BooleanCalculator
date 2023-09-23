@@ -90,13 +90,16 @@ Suppose we have a function $F_1 = X_1.X_2 + X_2.X_3 + X_3.X_1$
 2 1 3
 ```
 
-- $F_0 =$ $\frac{\partial F_1}{\partial x}$ $\Rightarrow X_2 \oplus X_3$![output screen shot](./readme_img/dx.png)
-- $F_0 = C_X(F_1)$ $\Rightarrow X_2 . X_3$![output screen shot](./readme_img/cx.png)
-- $F_0 = S_X(F_1)$ $\Rightarrow X_2 + X_3$![output screen shot](./readme_img/sx.png)
+- $F_0 =$ $\frac{\partial F_1}{\partial x}$ $\Rightarrow X_2 \oplus X_3$
+  <img src="./readme_img/dx.png" alt="output screen shot">
+- $F_0 = C_X(F_1)$ $\Rightarrow X_2 . X_3$
+  <img src="./readme_img/cx.png" alt="output screen shot">
+- $F_0 = S_X(F_1)$ $\Rightarrow X_2 + X_3$
+  <img src="./readme_img/sx.png" alt="output screen shot">
 
 ## Setup
 
-Simply clone this git hub repo and run `main.py ` with appropriate cmd and pcn files
+Simply clone this git hub repo and run `main.py ` with the appropriate cmd and pcn files
 `https://github.com/the-pinbo/BooleanCalculator.git`
 
 ## Contact
